@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<main class="o-main">
+    <fieldset class="estilo_form">
+        <legend id="estilo_legenda">Cadastro</legend>
+        <form method="post" action="/newcontato">
+        <label for="sigla">Sigla</label>
+        <input type="text" id="txtEmail" name="sigla" placeholder="Digite a sigla...">
+        <label for="cidade">Cidade/Localizacao</label>
+        <select id="txtCidade" name="cidade">
+            <option value="Osasco">Osasco</option>
+            <option value="Rio de Janeiro">Rio de janeiro</option>
+            <option value="Belo Horizonte">Belo horizonte</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Vitoria">Vitoria</option>
+        </select>
+        <label for="bairro">Bairro</label>
+        <input type="text" id="txtEmail" name="bairro" placeholder="Digite seu bairro..">
+         
+        <input type="submit" value="Enviar">
+        </form>
+      </fieldset>
+</main>
+<%- include('partials/footer') %>
